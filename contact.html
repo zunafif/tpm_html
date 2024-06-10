@@ -4,50 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+
+    <style>
+
+        :root{
+            background-color: rgb(220, 220, 255);
+        }
+
+        table{
+            width: 100%;
+        }
+
+        table, th, tr, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .item1 { grid-area: header; }
+        .item2 { grid-area: main; }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header'
+                'main';
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            padding: 20px 0;
+        }
+
+        input{
+            width: 250px;
+        }
+
+        input:hover{
+            background-color: grey;
+        }
+        header{
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        /* For desktop: */
+        .col-1 {width: 30%;}
+        .col-2 {width: 70%;}
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        <p><h2><b>HUBUNGI SAYA</b></h2></p>
-    </header>
-    <main>
-        <form action="" method="post">
-            <p>Nama &emsp;: <input type="text" name="nama" id="nama"></p>
-            <p>Email &emsp;: <input type="email" name="email" id="email"></p>
-            <p>Alamat &nbsp;&nbsp;: <textarea type="alamat" name="alamat" id="alamat"></textarea></p>
-            <p>Pesan &emsp;&nbsp;: <textarea type="pesan" name="pesan" id="pesan"></textarea></p>
-        </form>
-        <button>Submit</button>
-        <br>
-        <br>
-        <p><h3>-- Pesan Terkirim --</h3></p> 
-        <table>
-            <thead>
-                <th>Nama</th>
-                <th>Email</th>
-                <th>Alamat</th>
-                <th>Pesan</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Elias</td>
-                    <td>elias@gmail.com</td>
-                    <td>Surabaya</td>
-                    <td>Tolong buka email yang sudah saya kirimkan ke anda beberapa waktu lalu</td>
-                </tr>
-                <tr>
-                    <td>Edwin</td>
-                    <td>edwin@gmail.com</td>
-                    <td>Surabaya</td>
-                    <td>Pendaftaran segera dibuka</td>
-                </tr>
-                <tr>
-                    <td>Jason</td>
-                    <td>jason@gmail.com</td>
-                    <td>Jakarta</td>
-                    <td>Pemberitahuan project baru</td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
+    <div class="grid-container">
+        <div class="item1">
+            <header>
+                <p><h2><b>HUBUNGI SAYA</b></h2></p>
+            </header>
+        </div>
+        <div class="item2">
+            <main>
+                <div class="row">
+                    <div class="col-1">
+                        <fieldset>
+                            <legend>Form</legend>
+                            <form action="" method="post">
+                                <p>Nama &emsp;: <input type="text" name="nama" id="nama"></p>
+                                <p>Email &emsp;: <input type="email" name="email" id="email"></p>
+                                <p>Alamat &nbsp;&nbsp;: <input name="alamat" id="alamat"></textarea></p>
+                                <p>Pesan &emsp;: <input name="pesan" id="pesan"></textarea></p>
+                            </form>
+                            <button>Submit</button>
+                        </fieldset>
+                    </div>
+    
+                    <div class="col-2">
+                        <fieldset>
+                            <legend>Pesan Terkirim</legend>
+                            <table>
+                                <thead style="background-color: lightgrey;">
+                                    <th>Nama</th>
+                                    <th>Email</th>
+                                    <th>Alamat</th>
+                                    <th>Pesan</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Elias</td>
+                                        <td>elias@gmail.com</td>
+                                        <td>Surabaya</td>
+                                        <td>Tolong buka email yang sudah saya kirimkan ke anda beberapa waktu lalu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Edwin</td>
+                                        <td>edwin@gmail.com</td>
+                                        <td>Surabaya</td>
+                                        <td>Pendaftaran segera dibuka</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jason</td>
+                                        <td>jason@gmail.com</td>
+                                        <td>Jakarta</td>
+                                        <td>Pemberitahuan project baru</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Edith</td>
+                                        <td>Edith@gmail.com</td>
+                                        <td>Jakarta</td>
+                                        <td>Pemberitahuan project baru 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jason</td>
+                                        <td>jason@gmail.com</td>
+                                        <td>Jakarta</td>
+                                        <td>Pemberitahuan project baru 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jason</td>
+                                        <td>jason@gmail.com</td>
+                                        <td>Jakarta</td>
+                                        <td>Pemberitahuan project baru 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jason</td>
+                                        <td>jason@gmail.com</td>
+                                        <td>Jakarta</td>
+                                        <td>Pemberitahuan project baru 4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </fieldset>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
 </body>
 </html>

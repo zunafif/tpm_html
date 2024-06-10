@@ -4,31 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata | Zun</title>
+
+    <style>
+        :root{
+            background-color: rgb(220, 220, 255);
+        }
+
+        #pp{
+            border: 2pt solid black;
+        }
+
+        #pp:hover{
+            border: 2pt solid blue;
+        }
+
+        #sosmed{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #about{
+            width: 100%;
+            display: inline-block;
+            box-sizing: border-box;
+            background-image: url("image/avatar-design.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        #education{
+            width: 100%;
+            display: inline-block;
+            box-sizing: border-box;
+            background-image: url("image/graduated.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .flex-container > div {
+            width: 50%;
+            margin: 0px;
+            line-height: 25px;
+        }
+
+
+    </style>
 </head>
 <body>
     <header>
         <center><h2>MUHAMAD ZUN AFIF AMRULOH</h2></center>
         <center><h3><em>Web Programmer</em></h3></center>
-        <center><img src="image/foto.jpg" alt="foto" width="150px" height="210px"/></center>
+        <center><img id="pp" src="image/foto.jpg" alt="foto" width="150px" height="210px"/></center>
     </header>
 
     <main>
-        <div>
-            <fieldset disabled="disabled">
-                <legend><h3><b>About Me</b></h3></legend>
+        <div class="flex-container">
+            <div>
+                <fieldset id="about" disabled="disabled">
+                    <legend><h3><b>About Me</b></h3></legend>
                     <p>Nama &emsp;&emsp;&emsp; : Muhamad Zun Afif Amruloh</p>
                     <p>Tempat Lahir &nbsp;: Blitar</p>
                     <p>Tanggal Lahir : 23 September 1998</p>
-            </fieldset>
-        </div>
-        <br>
-        <div>
-            <fieldset disabled="disabled">
-                <legend><h3><b>Education Level</b></h3></legend>
-                <p><b>Institut Adhi Tama Surabaya</b> - Surabaya, Jawa Timur</p>
-                <p>Aug 2017 - Sep 2021</p>
-                <p><em>Bachelor Degree in Informatics Engineering, 3.84/4.00</em></p>
-            </fieldset>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset id="education" disabled="disabled">
+                    <legend><h3><b>Education Level</b></h3></legend>
+                    <p><b>Institut Adhi Tama Surabaya</b> - Surabaya, Jawa Timur</p>
+                    <p>Aug 2017 - Sep 2021</p>
+                    <p><em>Bachelor Degree in Informatics Engineering, 3.84/4.00</em></p>
+                </fieldset>
+            </div>
         </div>
         <br>
         <div>
@@ -74,7 +126,7 @@
     <br>    
     <footer>
         <h3>Contact Me</h3>
-        <p>081259831026 | <a href="mailto: zunafif@gmail.com" target="_blank">zunafif@gmail.com</a>| <a href="https://www.linkedin.com/in/muhamad-zun-afif-amruloh/" target="_blank">LinkedIn</a> |<a href="https://github.com/zunafif" target="_blank">GitHub</a> | <a href="http://localhost/tpm_html/contact.html" target="_blank">Reach Me</a></p>
+        <p id="sosmed">081259831026 | <a href="mailto: zunafif@gmail.com" target="_blank">zunafif@gmail.com</a>| <a href="https://www.linkedin.com/in/muhamad-zun-afif-amruloh/" target="_blank">LinkedIn</a> |<a href="https://github.com/zunafif" target="_blank">GitHub</a> | <a href="http://localhost/tpm_html/contact.html" target="_blank">Reach Me</a></p>
     </footer>
 </body>
 </html>
