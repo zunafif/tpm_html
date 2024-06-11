@@ -4,28 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata | Zun</title>
-
-    <style>
-        :root{
-            background-color: rgb(220, 220, 255);
-        }
-
-        #pp{
-            border: 2pt solid black;
-        }
-
-        #pp:hover{
-            border: 2pt solid blue;
-        }
-
-        #sosmed{
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/external.css"> -->
+     <style>
         #about{
             width: 100%;
-            display: inline-block;
-            box-sizing: border-box;
             background-image: url("image/avatar-design.png");
             background-size: contain;
             background-repeat: no-repeat;
@@ -34,99 +17,120 @@
 
         #education{
             width: 100%;
-            display: inline-block;
-            box-sizing: border-box;
             background-image: url("image/graduated.png");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: right;
         }
 
-        .flex-container {
-            display: flex;
-            flex-wrap: nowrap;
+        header{
+            padding-top: 7px;
+            margin-top: 7px;
+        }
+        
+        #pp{
+            border: 2pt solid black;
         }
 
-        .flex-container > div {
-            width: 50%;
-            margin: 0px;
-            line-height: 25px;
+        #pp:hover{
+            border: 2pt solid blue;
         }
-
-
-    </style>
+     </style>
 </head>
 <body>
     <header>
-        <center><h2>MUHAMAD ZUN AFIF AMRULOH</h2></center>
-        <center><h3><em>Web Programmer</em></h3></center>
-        <center><img id="pp" src="image/foto.jpg" alt="foto" width="150px" height="210px"/></center>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="p-3 mb-2 bg-primary text-white">
+                        <center><h2>MUHAMAD ZUN AFIF AMRULOH</h2></center>
+                        <center><h3><em>Web Programmer</em></h3></center>
+                        <center><img id="pp" src="image/foto.jpg" alt="foto" width="150px" height="210px"/></center>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-
+    <br>
     <main>
-        <div class="flex-container">
-            <div>
-                <fieldset id="about" disabled="disabled">
-                    <legend><h3><b>About Me</b></h3></legend>
-                    <p>Nama &emsp;&emsp;&emsp; : Muhamad Zun Afif Amruloh</p>
-                    <p>Tempat Lahir &nbsp;: Blitar</p>
-                    <p>Tanggal Lahir : 23 September 1998</p>
-                </fieldset>
-            </div>
-            <div>
-                <fieldset id="education" disabled="disabled">
-                    <legend><h3><b>Education Level</b></h3></legend>
-                    <p><b>Institut Adhi Tama Surabaya</b> - Surabaya, Jawa Timur</p>
-                    <p>Aug 2017 - Sep 2021</p>
-                    <p><em>Bachelor Degree in Informatics Engineering, 3.84/4.00</em></p>
-                </fieldset>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
+                        <fieldset class="" id="about" disabled="disabled">
+                            <legend><h3><b>About Me</b></h3></legend>
+                            <p>Nama &emsp;&emsp;&emsp; : Muhamad Zun Afif Amruloh</p>
+                            <p>Tempat Lahir &nbsp;: Blitar</p>
+                            <p>Tanggal Lahir : 23 September 1998</p>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 mb-2 bg-primary text-white">
+                        <fieldset id="education" disabled="disabled">
+                            <legend><h3><b>Education Level</b></h3></legend>
+                            <p><b>Institut Adhi Tama Surabaya</b> - Surabaya, Jawa Timur</p>
+                            <p>Aug 2017 - Sep 2021</p>
+                            <p><em>Bachelor Degree in Informatics Engineering, 3.84/4.00</em></p>
+                        </fieldset>
+                    </div>
+                </div>
             </div>
         </div>
         <br>
-        <div>
-            <fieldset disabled="disabled">
-                <legend><h3><b>Work Experiences</b></h3></legend>
-                <p><b>PT. Global Panca Sakti</b> - Sidoarjo, Jawa Timur</p>
-                <p>Dec 2021 - Dec 2023</p>
-                <p><em>Staff IT</em></p>
-                <p>Head Office dari PT Permata Bunda Bersama (RS Bunda Group), PT Sentosa Ilahi Persada (Enviro dan Cahaya Madinah Travel), dan 
-                    Yayasan Bhakti Muamalah</p>
-
-                <ul>
-                    <li>Membangun dan Memelihara Aplikasi Berbasis Web dan Dekstop. Aplikasi yang dikerjakan :</li>
-                        <ol>
-                            <li>SIMRS berbasis Dekstop</li>
-                            <li>SIMRS berbasis Web</li>
-                            <li>Web Laporan Keuangan (Transaksi dan Rekap)</li>
-                        </ol>
-                    <li>Mengcover custom fitur yang dibutuhkan petugas</li>
-                    <li>Memelihara Server Berbasis Linux dan Windows</li>
-                    <li>Memelihara Jaringan Internet</li>
-                </ul>
-            </fieldset>
-        </div>
-        <br>
-        <div>
-            <fieldset disabled="disabled">
-                <legend><h3><b>Organisational Experience</b></h3></legend>
-                <p><b>Asisten Laboratorium Jaringan Komputer ITATS</b> - Surabaya, Jawa Timur</p>
-                <p>Sep 2019 - Sep 2021</p>
-                <p><em>Ketua</em></p>
-
-                <ul>
-                    <li>Menuyusun Modul Praktikum Sistem Operasi dan Jaringan Komputer</li>
-                    <li>Memberikan Asistensi Kepada Praktikan</li>
-                    <li>Mengembangkan Web Ujian Online Untuk Keperluan Praktikum</li>
-                    <li>Maintenance Server</li>
-                    <li>Maintenance Jaringan</li>
-                </ul>
-            </fieldset>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
+                        <fieldset disabled="disabled">
+                            <legend><h3><b>Work Experiences</b></h3></legend>
+                            <p><b>PT. Global Panca Sakti</b> - Sidoarjo, Jawa Timur</p>
+                            <p>Dec 2021 - Dec 2023</p>
+                            <p><em>Staff IT</em></p>
+                            <p>Head Office dari PT Permata Bunda Bersama (RS Bunda Group), PT Sentosa Ilahi Persada (Enviro dan Cahaya Madinah Travel), dan 
+                                Yayasan Bhakti Muamalah</p>
+            
+                            <ul >
+                                <li>Membangun dan Memelihara Aplikasi Berbasis Web dan Dekstop. Aplikasi yang dikerjakan :</li>
+                                    <ol>
+                                        <li>SIMRS berbasis Dekstop</li>
+                                        <li>SIMRS berbasis Web</li>
+                                        <li>Web Laporan Keuangan (Transaksi dan Rekap)</li>
+                                    </ol>
+                                <li>Mengcover custom fitur yang dibutuhkan petugas</li>
+                                <li>Memelihara Server Berbasis Linux dan Windows</li>
+                                <li>Memelihara Jaringan Internet</li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="p-3 mb-2 bg-primary text-white">
+                        <fieldset disabled="disabled">
+                            <legend><h3><b>Organisational Experience</b></h3></legend>
+                            <p><b>Asisten Laboratorium Jaringan Komputer ITATS</b> - Surabaya, Jawa Timur</p>
+                            <p>Sep 2019 - Sep 2021</p>
+                            <p><em>Ketua</em></p>
+            
+                            <ul>
+                                <li>Menuyusun Modul Praktikum Sistem Operasi dan Jaringan Komputer</li>
+                                <li>Memberikan Asistensi Kepada Praktikan</li>
+                                <li>Mengembangkan Web Ujian Online Untuk Keperluan Praktikum</li>
+                                <li>Maintenance Server</li>
+                                <li>Maintenance Jaringan</li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
         </div>
     </main> 
     <br>    
     <footer>
-        <h3>Contact Me</h3>
-        <p id="sosmed">081259831026 | <a href="mailto: zunafif@gmail.com" target="_blank">zunafif@gmail.com</a>| <a href="https://www.linkedin.com/in/muhamad-zun-afif-amruloh/" target="_blank">LinkedIn</a> |<a href="https://github.com/zunafif" target="_blank">GitHub</a> | <a href="http://localhost/tpm_html/contact.html" target="_blank">Reach Me</a></p>
+        <div class="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
+            <h3>Contact Me</h3>
+            <p id="sosmed">081259831026 | <a href="mailto: zunafif@gmail.com" target="_blank">zunafif@gmail.com</a>| <a href="https://www.linkedin.com/in/muhamad-zun-afif-amruloh/" target="_blank">LinkedIn</a> |<a href="https://github.com/zunafif" target="_blank">GitHub</a> | <a href="http://localhost/tpm_html/contact.html" target="_blank">Reach Me</a></p>
+        </div>
     </footer>
 </body>
 </html>
