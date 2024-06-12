@@ -71,6 +71,11 @@
                 </ul>
               </li>
             </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div style="width: 5%;" class="d-flex nav-item" id="txt"></div>
+                </li>
+            </ul>
           </div>
         </div>
     </nav>
@@ -182,7 +187,7 @@ function startTime() {
   let s = today.getSeconds();
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
   setTimeout(startTime, 1000);
 }
 
