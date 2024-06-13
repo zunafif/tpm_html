@@ -1,6 +1,6 @@
 #about{
     width: 100%;
-    background-image: url("image/avatar-design.png");
+    background-image: url("../image/avatar-design.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -8,7 +8,7 @@
 
 #education{
     width: 100%;
-    background-image: url("image/graduated.png");
+    background-image: url("../image/graduated.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -40,4 +40,8 @@ h2,h3{
 
 input:hover{
     background-color: lightgray;
+}
+
+.txt{
+    width: 5%;
 }
