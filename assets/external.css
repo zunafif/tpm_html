@@ -1,67 +1,23 @@
-:root{
-    background-color: rgb(220, 220, 255);
-}
-
-table{
+#about{
     width: 100%;
+    background-image: url("image/avatar-design.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
-table, th, tr, td{
-    border: 1px solid black;
-    border-collapse: collapse;
+#education{
+    width: 100%;
+    background-image: url("image/graduated.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: main; }
-
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        'header'
-        'main';
-    gap: 10px;
-    padding: 10px;
-}
-
-.grid-container > div {
-    padding: 20px 0;
-}
-
-input{
-    width: 250px;
-}
-
-input:hover{
-    background-color: grey;
-}
 header{
+    padding-top: 7px;
+    margin-top: 7px;
     text-align: center;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-
-/* For desktop: */
-.col-1 {width: 30%;}
-.col-2 {width: 70%;}
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
 }
 
 #pp{
@@ -72,37 +28,16 @@ header{
     border: 2pt solid blue;
 }
 
-#sosmed{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+h2,h3{
+    text-align: center;
 }
 
-#about{
-    width: 100%;
-    display: inline-block;
-    box-sizing: border-box;
-    background-image: url("image/avatar-design.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#education{
-    width: 100%;
-    display: inline-block;
-    box-sizing: border-box;
-    background-image: url("image/graduated.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.flex-container > div {
-    width: 50%;
-    margin: 0px;
-    line-height: 25px;
+input:hover{
+    background-color: lightgray;
 }

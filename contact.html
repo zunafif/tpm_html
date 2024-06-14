@@ -5,153 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="assets/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="assets/external.css"> -->
-     <style>
-        header{
-            padding-top: 7px;
-            margin-top: 7px;
-            text-align: center;
-        }
-        input:hover{
-            background-color: lightgray;
-        }
-     </style>
+    <link rel="stylesheet" href="assets/external.css">
 </head>
 <body>
-    <div class="grid-container">
-            <header>
-                <div class="p-3 mb-2 bg-primary text-white">
-                    <p><h2><b>HUBUNGI SAYA</b></h2></p>
+        <header>
+            <div class="p-3 mb-2 bg-primary text-white">
+                <p><h2><b>HUBUNGI SAYA</b></h2></p>
+            </div>
+        </header>
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
+                            <fieldset>
+                                <legend>Form Pesan</legend>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Nama</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name example">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput2" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea2" class="form-label">Pesan</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+                                </div>
+                                <button id="myBtn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                                    Submit
+                                </button>
+                                <a href="http://localhost/tpm_html/index.html" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="kembali ke halaman sebelumnya">Back</a>
+                                <p><span id="pesanSukses"></span></p>
+                            </fieldset>
+                        </div>
+                    </div>
                 </div>
-            </header>
-            <main>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
-                                <fieldset>
-                                    <legend>Form Pesan</legend>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Nama</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name example">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput2" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlTextarea2" class="form-label">Pesan</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
-                                    </div>
-                                    <button id="myBtn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
-                                        Submit
-                                    </button>
-                                    <a href="http://localhost/tpm_html/index.html" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="kembali ke halaman sebelumnya">Back</a>
-                                    <p><span id="pesanSukses"></span></p>
-
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                          <div class="modal-content">
-                                            <div class="modal-header">
-                                              <h1 class="modal-title fs-5" id="exampleModalLabel">Pesan</h1>
-                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                              Pesan Sukses Dikirim
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </div>
+            </div> 
+            <br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="p-3 mb-2 bg-primary text-white">
+                            <fieldset>
+                                <legend>Pesan Terkirim</legend>
+                                
+                                <table class="table table-striped table-hover">
+                                    <thead>
+                                        <th>Nama</th>
+                                        <th>Email</th>
+                                        <th>Alamat</th>
+                                        <th>Pesan</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Elias</td>
+                                            <td>elias@gmail.com</td>
+                                            <td>Surabaya</td>
+                                            <td>Tolong buka email yang sudah saya kirimkan ke anda beberapa waktu lalu</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Edwin</td>
+                                            <td>edwin@gmail.com</td>
+                                            <td>Surabaya</td>
+                                            <td>Pendaftaran segera dibuka</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jason</td>
+                                            <td>jason@gmail.com</td>
+                                            <td>Jakarta</td>
+                                            <td>Pemberitahuan project baru</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Edith</td>
+                                            <td>Edith@gmail.com</td>
+                                            <td>Jakarta</td>
+                                            <td>Pemberitahuan project baru 2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jason</td>
+                                            <td>jason@gmail.com</td>
+                                            <td>Jakarta</td>
+                                            <td>Pemberitahuan project baru 2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jason</td>
+                                            <td>jason@gmail.com</td>
+                                            <td>Jakarta</td>
+                                            <td>Pemberitahuan project baru 3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jason</td>
+                                            <td>jason@gmail.com</td>
+                                            <td>Jakarta</td>
+                                            <td>Pemberitahuan project baru 4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </fieldset>
                         </div>
                     </div>
-                </div> 
-                <br>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="p-3 mb-2 bg-primary text-white">
-                                <fieldset>
-                                    <legend>Pesan Terkirim</legend>
-                                    
-                                    <table class="table table-striped table-hover">
-                                        <thead>
-                                            <th>Nama</th>
-                                            <th>Email</th>
-                                            <th>Alamat</th>
-                                            <th>Pesan</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Elias</td>
-                                                <td>elias@gmail.com</td>
-                                                <td>Surabaya</td>
-                                                <td>Tolong buka email yang sudah saya kirimkan ke anda beberapa waktu lalu</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Edwin</td>
-                                                <td>edwin@gmail.com</td>
-                                                <td>Surabaya</td>
-                                                <td>Pendaftaran segera dibuka</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jason</td>
-                                                <td>jason@gmail.com</td>
-                                                <td>Jakarta</td>
-                                                <td>Pemberitahuan project baru</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Edith</td>
-                                                <td>Edith@gmail.com</td>
-                                                <td>Jakarta</td>
-                                                <td>Pemberitahuan project baru 2</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jason</td>
-                                                <td>jason@gmail.com</td>
-                                                <td>Jakarta</td>
-                                                <td>Pemberitahuan project baru 2</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jason</td>
-                                                <td>jason@gmail.com</td>
-                                                <td>Jakarta</td>
-                                                <td>Pemberitahuan project baru 3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jason</td>
-                                                <td>jason@gmail.com</td>
-                                                <td>Jakarta</td>
-                                                <td>Pemberitahuan project baru 4</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </fieldset>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Pesan</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </div> 
-        </main>
-    </div>
+                    <div class="modal-body">
+                        Pesan Sukses Dikirim
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 <script src="assets/bootstrap.bundle.min.js"></script>
-<script>
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-</script>
-<script>
-    const element = document.getElementById("myBtn");
-    element.addEventListener("click", myFunction);
-    
-    function myFunction() {
-      document.getElementById("pesanSukses").innerHTML = "Berhasil Dikirim !";
-    }
-    </script>
+<script src="assets/customJs.js"></script>
 </html>

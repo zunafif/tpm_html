@@ -5,14 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Converter</title>
     <link rel="stylesheet" href="assets/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="assets/external.css"> -->
-     <style>
-        header{
-            padding-top: 7px;
-            margin-top: 7px;
-            text-align: center;
-        }
-     </style>
+    <link rel="stylesheet" href="assets/external.css">
 </head>
 <body>
     <div class="grid-container">
@@ -51,14 +44,5 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 <script src="assets/bootstrap.bundle.min.js"></script>
-<script>
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-</script>
-<script>
-    function farenheitCelciusConverter(temp) {
-      temp = parseFloat(temp);
-      document.getElementById("outputCelcius").innerHTML=(temp-32)/1.8;
-    }
-</script>
+<script src="assets/customJs.js"></script>
 </html>
